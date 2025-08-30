@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_openings",
+  "info": {
+    "singularName": "job-opening",
+    "pluralName": "job-openings",
+    "displayName": "Job Opening"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "location": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "On-site",
+        "Remote",
+        "Hybrid"
+      ]
+    },
+    "workMode": {
+      "type": "enumeration",
+      "enum": [
+        "Full time",
+        "Part-time"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "requirements": {
+      "type": "component",
+      "component": "job.requirement",
+      "repeatable": true
+    },
+    "qualification": {
+      "type": "text"
+    },
+    "experience": {
+      "type": "text"
+    },
+    "requiredSkills": {
+      "type": "component",
+      "component": "job.skill",
+      "repeatable": true
+    },
+    "job_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::job-category.job-category",
+      "inversedBy": "job_openings"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_services_use_case_tabs",
+  "info": {
+    "displayName": "UseCaseTab"
+  },
+  "options": {},
+  "attributes": {
+    "tabNo": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "tabDetails": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

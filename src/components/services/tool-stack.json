@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_services_tool_stacks",
+  "info": {
+    "displayName": "ToolStack"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icons": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

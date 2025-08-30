@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_services_solutions",
+  "info": {
+    "displayName": "Solutions"
+  },
+  "options": {},
+  "attributes": {
+    "firstHeading": {
+      "type": "string"
+    },
+    "headingFirstPart": {
+      "type": "string"
+    },
+    "headingStylePart": {
+      "type": "string"
+    },
+    "headingLastPart": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "slides": {
+      "type": "component",
+      "component": "services.solution-slide",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

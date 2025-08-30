@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_services_deliverable_items",
+  "info": {
+    "displayName": "DeliverableItem"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

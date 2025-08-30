@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_product_mockup_tabs",
+  "info": {
+    "displayName": "Mockup Tab"
+  },
+  "options": {},
+  "attributes": {
+    "tabName": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "product.mockup-tab-item",
+      "repeatable": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_services_heroes",
+  "info": {
+    "displayName": "Hero"
+  },
+  "options": {},
+  "attributes": {
+    "bgType": {
+      "type": "enumeration",
+      "enum": [
+        "image",
+        "video"
+      ]
+    },
+    "heroBg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "headingFirstPart": {
+      "type": "string"
+    },
+    "headingStyledPart": {
+      "type": "string"
+    },
+    "headingSecondPart": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "heroPara": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

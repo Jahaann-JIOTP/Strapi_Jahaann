@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_job_skills",
+  "info": {
+    "displayName": "Skill"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

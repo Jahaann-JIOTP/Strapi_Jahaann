@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_product_icon_lists",
+  "info": {
+    "displayName": "Icon List"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

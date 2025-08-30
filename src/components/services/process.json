@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_services_processes",
+  "info": {
+    "displayName": "Process"
+  },
+  "options": {},
+  "attributes": {
+    "firstHeading": {
+      "type": "string"
+    },
+    "headingFirstPart": {
+      "type": "string"
+    },
+    "headingStylePart": {
+      "type": "string"
+    },
+    "headingLastPart": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "righSideHeading": {
+      "type": "text"
+    },
+    "steps": {
+      "type": "component",
+      "component": "services.process-step",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

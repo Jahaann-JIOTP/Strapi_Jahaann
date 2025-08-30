@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_job_requirements",
+  "info": {
+    "displayName": "Requirement"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

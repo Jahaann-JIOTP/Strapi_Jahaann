@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_categories",
+  "info": {
+    "singularName": "job-category",
+    "pluralName": "job-categories",
+    "displayName": "Job Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "type": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "job_openings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job-opening.job-opening",
+      "mappedBy": "job_category"
+    }
+  }
+}

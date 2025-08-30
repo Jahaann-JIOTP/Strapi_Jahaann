@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_services_capabilities",
+  "info": {
+    "displayName": "Capabilities"
+  },
+  "options": {},
+  "attributes": {
+    "firstHeading": {
+      "type": "string"
+    },
+    "secondHeading": {
+      "type": "component",
+      "component": "services.heading-parts",
+      "repeatable": false
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "services.capability-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

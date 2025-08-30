@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_services_solution_slides",
+  "info": {
+    "displayName": "SolutionSlide"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slideDetails": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

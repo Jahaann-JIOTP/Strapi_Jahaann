@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_product_mockup_tab_items",
+  "info": {
+    "displayName": "Mockup Tab Item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_services_key_deliverables",
+  "info": {
+    "displayName": "KeyDeliverables"
+  },
+  "options": {},
+  "attributes": {
+    "firstHeading": {
+      "type": "string"
+    },
+    "headingFirstPart": {
+      "type": "string"
+    },
+    "headingStylePart": {
+      "type": "string"
+    },
+    "headingLastPart": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "iconList": {
+      "type": "component",
+      "component": "services.deliverable-item",
+      "repeatable": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

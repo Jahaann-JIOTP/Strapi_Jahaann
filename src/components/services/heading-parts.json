@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_services_heading_parts",
+  "info": {
+    "displayName": "HeadingParts"
+  },
+  "options": {},
+  "attributes": {
+    "headingFirstPart": {
+      "type": "string"
+    },
+    "headingStylePart": {
+      "type": "string"
+    },
+    "headingLastPart": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

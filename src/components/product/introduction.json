@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_product_introductions",
+  "info": {
+    "displayName": "Introduction"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

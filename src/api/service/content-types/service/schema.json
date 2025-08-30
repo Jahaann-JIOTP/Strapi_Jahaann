@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "hero": {
+      "type": "component",
+      "component": "services.hero",
+      "repeatable": false
+    },
+    "capabilities": {
+      "type": "component",
+      "component": "services.capabilities",
+      "repeatable": false
+    },
+    "solutions": {
+      "type": "component",
+      "component": "services.solutions",
+      "repeatable": false
+    },
+    "process": {
+      "type": "component",
+      "component": "services.process",
+      "repeatable": false
+    },
+    "keyDeliverables": {
+      "type": "component",
+      "component": "services.key-deliverables",
+      "repeatable": false
+    },
+    "keyTools": {
+      "type": "component",
+      "component": "services.key-tools",
+      "repeatable": false
+    },
+    "useCases": {
+      "type": "component",
+      "component": "services.use-cases",
+      "repeatable": false
+    }
+  }
+}
