@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_blog_sections",
+  "info": {
+    "displayName": "section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "paragraphs": {
+      "type": "text"
+    },
+    "principles": {
+      "type": "component",
+      "component": "blog.principles",
+      "repeatable": true
+    },
+    "reasons": {
+      "type": "component",
+      "component": "blog.reasons",
+      "repeatable": true
+    },
+    "steps": {
+      "type": "component",
+      "component": "blog.steps",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

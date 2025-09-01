@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "casestudycards",
+  "info": {
+    "singularName": "casestudycard",
+    "pluralName": "casestudycards",
+    "displayName": "casestudycard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Casestudycontent": {
+      "type": "component",
+      "component": "case-studies.casestudy-content",
+      "repeatable": false
+    }
+  }
+}

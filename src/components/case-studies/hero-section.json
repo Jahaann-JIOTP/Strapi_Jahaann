@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_case_studies_hero_sections",
+  "info": {
+    "displayName": "heroSection"
+  },
+  "options": {},
+  "attributes": {
+    "herobg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heading": {
+      "type": "component",
+      "component": "blog.heading",
+      "repeatable": false
+    },
+    "HeroParts": {
+      "type": "component",
+      "component": "case-studies.hero-parts",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

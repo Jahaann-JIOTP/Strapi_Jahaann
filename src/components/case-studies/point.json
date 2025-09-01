@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_case_studies_points",
+  "info": {
+    "displayName": "Point"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "objective": {
+      "type": "text"
+    },
+    "execution": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

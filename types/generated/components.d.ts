@@ -1,5 +1,150 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface BlogContent extends Struct.ComponentSchema {
+  collectionName: 'components_blog_contents';
+  info: {
+    displayName: 'content';
+  };
+  attributes: {
+    heroSection: Schema.Attribute.Component<'blog.hero-section', false>;
+    introHighlight: Schema.Attribute.Text;
+    sections: Schema.Attribute.Component<'blog.section', true>;
+  };
+}
+
+export interface BlogHeading extends Struct.ComponentSchema {
+  collectionName: 'components_blog_headings';
+  info: {
+    displayName: 'heading';
+  };
+  attributes: {
+    firstPart: Schema.Attribute.String;
+    italicPart: Schema.Attribute.String;
+    secondPart: Schema.Attribute.String;
+  };
+}
+
+export interface BlogHeroSection extends Struct.ComponentSchema {
+  collectionName: 'components_blog_hero_sections';
+  info: {
+    displayName: 'heroSection';
+  };
+  attributes: {
+    backgroundSrc: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    heading: Schema.Attribute.Component<'blog.heading', true>;
+    paragraph: Schema.Attribute.Text;
+  };
+}
+
+export interface BlogPrinciples extends Struct.ComponentSchema {
+  collectionName: 'components_blog_principles';
+  info: {
+    displayName: 'Principles';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BlogReasons extends Struct.ComponentSchema {
+  collectionName: 'components_blog_reasons';
+  info: {
+    displayName: 'Reasons';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BlogSection extends Struct.ComponentSchema {
+  collectionName: 'components_blog_sections';
+  info: {
+    displayName: 'section';
+  };
+  attributes: {
+    paragraphs: Schema.Attribute.Text;
+    principles: Schema.Attribute.Component<'blog.principles', true>;
+    reasons: Schema.Attribute.Component<'blog.reasons', true>;
+    steps: Schema.Attribute.Component<'blog.steps', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BlogSteps extends Struct.ComponentSchema {
+  collectionName: 'components_blog_steps';
+  info: {
+    displayName: 'Steps';
+  };
+  attributes: {
+    paragraph: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface CaseStudiesCasestudyContent extends Struct.ComponentSchema {
+  collectionName: 'components_case_studies_casestudy_contents';
+  info: {
+    displayName: 'CasestudyContent';
+  };
+  attributes: {
+    heroSection: Schema.Attribute.Component<'case-studies.hero-section', false>;
+    sections: Schema.Attribute.Component<'case-studies.sections', true>;
+  };
+}
+
+export interface CaseStudiesHeroParts extends Struct.ComponentSchema {
+  collectionName: 'components_case_studies_hero_parts';
+  info: {
+    displayName: 'HeroParts';
+  };
+  attributes: {
+    client: Schema.Attribute.String;
+    industry: Schema.Attribute.String;
+    serviceProvided: Schema.Attribute.String;
+  };
+}
+
+export interface CaseStudiesHeroSection extends Struct.ComponentSchema {
+  collectionName: 'components_case_studies_hero_sections';
+  info: {
+    displayName: 'heroSection';
+  };
+  attributes: {
+    heading: Schema.Attribute.Component<'blog.heading', false>;
+    herobg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    HeroParts: Schema.Attribute.Component<'case-studies.hero-parts', false>;
+  };
+}
+
+export interface CaseStudiesPoint extends Struct.ComponentSchema {
+  collectionName: 'components_case_studies_points';
+  info: {
+    displayName: 'Point';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    execution: Schema.Attribute.Text;
+    objective: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface CaseStudiesSections extends Struct.ComponentSchema {
+  collectionName: 'components_case_studies_sections';
+  info: {
+    displayName: 'sections';
+  };
+  attributes: {
+    paragraphs: Schema.Attribute.Text;
+    Points: Schema.Attribute.Component<'case-studies.point', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface JobRequirement extends Struct.ComponentSchema {
   collectionName: 'components_job_requirements';
   info: {
@@ -323,6 +468,18 @@ export interface SharedSlider extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'blog.content': BlogContent;
+      'blog.heading': BlogHeading;
+      'blog.hero-section': BlogHeroSection;
+      'blog.principles': BlogPrinciples;
+      'blog.reasons': BlogReasons;
+      'blog.section': BlogSection;
+      'blog.steps': BlogSteps;
+      'case-studies.casestudy-content': CaseStudiesCasestudyContent;
+      'case-studies.hero-parts': CaseStudiesHeroParts;
+      'case-studies.hero-section': CaseStudiesHeroSection;
+      'case-studies.point': CaseStudiesPoint;
+      'case-studies.sections': CaseStudiesSections;
       'job.requirement': JobRequirement;
       'job.skill': JobSkill;
       'product.icon-list': ProductIconList;

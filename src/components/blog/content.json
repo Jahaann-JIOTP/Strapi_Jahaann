@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blog_contents",
+  "info": {
+    "displayName": "content"
+  },
+  "options": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "component": "blog.hero-section",
+      "repeatable": false
+    },
+    "introHighlight": {
+      "type": "text"
+    },
+    "sections": {
+      "type": "component",
+      "component": "blog.section",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

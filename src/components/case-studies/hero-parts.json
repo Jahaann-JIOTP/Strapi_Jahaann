@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_case_studies_hero_parts",
+  "info": {
+    "displayName": "HeroParts"
+  },
+  "options": {},
+  "attributes": {
+    "client": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "serviceProvided": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

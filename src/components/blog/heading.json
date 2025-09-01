@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blog_headings",
+  "info": {
+    "displayName": "heading"
+  },
+  "options": {},
+  "attributes": {
+    "firstPart": {
+      "type": "string"
+    },
+    "italicPart": {
+      "type": "string"
+    },
+    "secondPart": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blog_steps",
+  "info": {
+    "displayName": "Steps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

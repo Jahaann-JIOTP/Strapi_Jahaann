@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogcards",
+  "info": {
+    "singularName": "blogcard",
+    "pluralName": "blogcards",
+    "displayName": "blogcard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "blogcard"
+    },
+    "blogpage": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blogpage.blogpage",
+      "inversedBy": "blogcards"
+    },
+    "blogcontent": {
+      "type": "component",
+      "component": "blog.content",
+      "repeatable": false
+    }
+  }
+}
