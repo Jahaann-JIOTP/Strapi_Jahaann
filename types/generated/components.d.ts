@@ -1,5 +1,16 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface BlogConclusion extends Struct.ComponentSchema {
+  collectionName: 'components_blog_conclusions';
+  info: {
+    displayName: 'Conclusion';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface BlogContent extends Struct.ComponentSchema {
   collectionName: 'components_blog_contents';
   info: {
@@ -45,6 +56,7 @@ export interface BlogPrinciples extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
+    Points: Schema.Attribute.Component<'case-studies.point', true>;
     title: Schema.Attribute.String;
   };
 }
@@ -56,6 +68,7 @@ export interface BlogReasons extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
+    points: Schema.Attribute.Component<'case-studies.point', true>;
     title: Schema.Attribute.String;
   };
 }
@@ -66,6 +79,7 @@ export interface BlogSection extends Struct.ComponentSchema {
     displayName: 'section';
   };
   attributes: {
+    Conclusion: Schema.Attribute.Component<'blog.conclusion', true>;
     paragraphs: Schema.Attribute.Text;
     principles: Schema.Attribute.Component<'blog.principles', true>;
     reasons: Schema.Attribute.Component<'blog.reasons', true>;
@@ -81,6 +95,7 @@ export interface BlogSteps extends Struct.ComponentSchema {
   };
   attributes: {
     paragraph: Schema.Attribute.Text;
+    points: Schema.Attribute.Component<'case-studies.point', true>;
     title: Schema.Attribute.String;
   };
 }
@@ -468,6 +483,7 @@ export interface SharedSlider extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'blog.conclusion': BlogConclusion;
       'blog.content': BlogContent;
       'blog.heading': BlogHeading;
       'blog.hero-section': BlogHeroSection;

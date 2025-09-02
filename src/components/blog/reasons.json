@@ -10,6 +10,11 @@
     },
     "description": {
       "type": "text"
+    },
+    "points": {
+      "type": "component",
+      "component": "case-studies.point",
+      "repeatable": true
     }
   },
   "config": {}

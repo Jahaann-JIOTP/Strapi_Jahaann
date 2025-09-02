@@ -17,6 +17,9 @@
     "description": {
       "type": "text"
     },
+    "category": {
+      "type": "string"
+    },
     "blogcards": {
       "type": "relation",
       "relation": "oneToMany",

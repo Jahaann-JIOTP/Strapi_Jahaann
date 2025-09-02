@@ -25,6 +25,11 @@
       "type": "component",
       "component": "blog.steps",
       "repeatable": true
+    },
+    "Conclusion": {
+      "type": "component",
+      "component": "blog.conclusion",
+      "repeatable": true
     }
   },
   "config": {}

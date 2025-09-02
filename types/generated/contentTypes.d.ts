@@ -522,6 +522,7 @@ export interface ApiBlogpageBlogpage extends Struct.CollectionTypeSchema {
   };
   attributes: {
     blogcards: Schema.Attribute.Relation<'oneToMany', 'api::blogcard.blogcard'>;
+    category: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
