@@ -490,6 +490,7 @@ export interface ApiBlogcardBlogcard extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::category.category'
     >;
+    category: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

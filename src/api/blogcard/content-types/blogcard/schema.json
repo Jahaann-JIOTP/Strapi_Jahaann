@@ -47,6 +47,9 @@
       "type": "component",
       "component": "blog.content",
       "repeatable": false
+    },
+    "category": {
+      "type": "string"
     }
   }
 }

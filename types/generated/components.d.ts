@@ -6,7 +6,7 @@ export interface BlogConclusion extends Struct.ComponentSchema {
     displayName: 'Conclusion';
   };
   attributes: {
-    description: Schema.Attribute.Text;
+    description: Schema.Attribute.RichText;
     title: Schema.Attribute.String;
   };
 }
@@ -80,11 +80,13 @@ export interface BlogSection extends Struct.ComponentSchema {
   };
   attributes: {
     Conclusion: Schema.Attribute.Component<'blog.conclusion', true>;
-    paragraphs: Schema.Attribute.Text;
+    paragraph: Schema.Attribute.RichText;
+    paragraph1: Schema.Attribute.RichText;
     principles: Schema.Attribute.Component<'blog.principles', true>;
     reasons: Schema.Attribute.Component<'blog.reasons', true>;
     steps: Schema.Attribute.Component<'blog.steps', true>;
     title: Schema.Attribute.String;
+    title1: Schema.Attribute.String;
   };
 }
 

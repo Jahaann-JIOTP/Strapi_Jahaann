@@ -8,8 +8,14 @@
     "title": {
       "type": "string"
     },
-    "paragraphs": {
-      "type": "text"
+    "paragraph": {
+      "type": "richtext"
+    },
+    "title1": {
+      "type": "string"
+    },
+    "paragraph1": {
+      "type": "richtext"
     },
     "principles": {
       "type": "component",
